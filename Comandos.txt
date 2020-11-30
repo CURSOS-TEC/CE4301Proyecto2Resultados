@@ -27,3 +27,4 @@ cat diff_V.txt | awk -F "=" '/system.cpu.dcache.overall_miss_rate::total / {prin
 diff -u stats_original.txt stats_VI.txt &> diff_VI.txt
 cat diff_VI.txt | awk -F "=" '/system.cpu.dcache.overall_misses::total/ {print $0}'
 cat diff_VI.txt | awk -F "=" '/system.cpu.dcache.overall_hits::total/ {print $0}'
+cat diff_VI.txt | awk -F "=" '/system.cpu.icache.tags.tagsinuse/ {print $0}'
