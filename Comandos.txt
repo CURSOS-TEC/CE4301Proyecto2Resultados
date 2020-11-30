@@ -1,0 +1,29 @@
+diff -u stats_original.txt stats_II.txt &> diff_II.txt
+
+cat diff_II.txt | awk -F "=" '/system.cpu.dcache.overall_misses::total/ {print $0}'
+-system.cpu.dcache.overall_misses::total        423398                       # number of overall misses
++system.cpu.dcache.overall_misses::total        243462                       # number of overall misses
+cat diff_II.txt | awk -F "=" '/system.cpu.dcache.tags.tagsinuse/ {print $0}'
+
+
+diff -u stats_original.txt stats_III.txt &> diff_III.txt
+cat diff_III.txt | awk -F "=" '/system.cpu.dcache.overall_misses::total/ {print $0}'
+-system.cpu.dcache.overall_misses::total        423398                       # number of overall misses
++system.cpu.dcache.overall_misses::total        556548                       # number of overall misses
+
+diff -u stats_original.txt stats_IV.txt &> diff_IV.txt
+cat diff_IV.txt | awk -F "=" '/system.cpu.dcache.overall_misses::total/ {print $0}'
+cat diff_IV.txt | awk -F "=" '/system.cpu.dcache.writebacks::total/ {print $0}'
+cat diff_IV.txt | awk -F "=" '/system.cpu.dcache.replacements/ {print $0}'
+cat diff_IV.txt | awk -F "=" '/system.cpu.dcache.overall_hits::total/ {print $0}'
+cat diff_IV.txt | awk -F "=" '/system.cpu.dcache.overall_miss_rate::total/ {print $0}'
+
+diff -u stats_original.txt stats_V.txt &> diff_V.txt
+cat diff_V.txt | awk -F "=" '/system.cpu.dcache.overall_misses::total/ {print $0}'
+cat diff_V.txt | awk -F "=" '/system.cpu.dcache.overall_hits::total / {print $0}'
+cat diff_V.txt | awk -F "=" '/system.cpu.dcache.overall_miss_rate::total / {print $0}'
+
+
+diff -u stats_original.txt stats_VI.txt &> diff_VI.txt
+cat diff_VI.txt | awk -F "=" '/system.cpu.dcache.overall_misses::total/ {print $0}'
+cat diff_VI.txt | awk -F "=" '/system.cpu.dcache.overall_hits::total/ {print $0}'
