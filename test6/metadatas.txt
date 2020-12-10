@@ -1,0 +1,4 @@
+[1;33mbenchmark[0m=blackscholes
+[1;33mxVar[0m=Asociatividad de cache L1 de datos e insturcciones 
+[1;33myVar[0m=system.cpu.dcache.writebacks::total 
+[1;33mcpu[0m=TimingSimpleCPU
