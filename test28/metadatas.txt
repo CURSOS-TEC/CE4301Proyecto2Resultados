@@ -1,4 +1,0 @@
-[1;33mbenchmark[0m=freqmine
-[1;33mxVar[0m=Tamaño de memoria de cache L1 de datos 
-[1;33myVar[0m=system.cpu.dcache.replacements 
-[1;33mcpu[0m=TimingSimpleCPU

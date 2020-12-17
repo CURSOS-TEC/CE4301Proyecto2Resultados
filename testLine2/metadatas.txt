@@ -1,0 +1,4 @@
+[1;33mbenchmark[0m=freqmine
+[1;33mxVar[0m=Ancho de línea 
+[1;33myVar[0m=system.cpu.dcache.overall_misses::total 
+[1;33mcpu[0m=TimingSimpleCPU
